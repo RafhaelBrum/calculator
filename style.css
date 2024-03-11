@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    height: 5vh;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(15, 15, 15) 50%, rgba(0, 0, 0, 1) 100%);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* calculadora */
+
+#calculator {
+    background-color: rgba(255, 255, 255, 0.060);
+    border-radius: 25px;
+    max-width: 500px;
+}
+
+#display {
+    background-color: hsl(0, 0%, 30%);
+    width: 96%;
+    padding: 25px;
+    margin: 10px;
+    margin-top: 15px;
+    font-size: 5rem;
+    border-radius: 25px;
+    text-align: left;
+    border: none;
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 30%)
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 50%);
+    transition: 0.3s;
+}
+
+button:active {
+    background-color: hsl(0, 0%, 800%);
+}
+
+/* clear button */
+.clear {
+    background-color: rgba(255, 0, 0, 0.350);
+    color: rgb(255, 255, 255);
+}
+
+.clear:hover {
+    background-color: hsl(0, 100%, 25%);
+}
+
+.clear:active {
+    background-color: hsl(0, 100%, 50%);
+}
+
+/* calculate button */
+.calculate {
+    background-color: hsl(240, 60%, 50%);
+}
+
+.calculate:hover {
+    background-color: hsl(240, 60%, 60%);
+}
+
+.calculate:active {
+    background-color: hsl(240, 60%, 80%);
+}
+
+/* operator buttons */
+.operator {
+    background-color: hsl(40, 70%, 50%);
+}
+
+.operator:hover {
+    background-color: hsl(40, 70%, 70%);
+}
+
+.operator:active {
+    background-color: hsl(40, 70%, 90%);
+}
+
+
+/* histórico */
+.historico {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    height: 60vh;
+    width: 40vh;
+    transition: 1s;
+    overflow: auto;
+    scrollbar-width: auto;
+    background-color: #00000049;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.historico *{
+    margin-top: 10px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a8bbbf98;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbff1;
+  }
